@@ -1,0 +1,15 @@
+
+.intro {
+    max-width: 100vw;
+    background-color: #E8310C;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #f0ead6;
+}
+.one {
+    flex: 1 1 auto;
+}
+.two {
+    flex: 1 1 auto;
+}
