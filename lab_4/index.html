@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Prof A's Demo Page</title>
+    <title>Jose Aguirre-Mori's Lab 4</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
 
@@ -28,6 +28,25 @@
       function clickMe() {
         const content = document.querySelector(".content");
         content.innerHTML = "Hello world";
+
+        let myname = "Jose Aguirre-Mori";
+        const jose = myname.substr(0,3);
+        const aguirremori = myname.substr(4);
+
+        const heading = document.querySelector(".header");
+        let name = "Jose Aguirre-Mori";
+        heading.textContent - name + "'s Lab 4  ";
+
+        let namelength = jose.length + aguirremori.length;
+        heading.textContent = myname + "'s Lab 4  " + namelength;
+
+        let pone= document.createElement("p");
+        document.querySelector(".content").appendChild(pone);
+        pone.innerHTML = "My name has " + namelength + " characters"
+
+        let ptwo= document.createElement("p");
+        document.querySelector(".content").appendChild(ptwo);
+        ptwo.innerHTML = "The third character in my name is " + myname.substring(2,3).toUpperCase() + "<br>" + name.substr(-3)
       }
     </script>
   </body>
