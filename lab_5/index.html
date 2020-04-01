@@ -269,6 +269,11 @@
     const heading = document.querySelector(".header");
       let name = "Jose Aguirre-Mori";
       heading.textContent = name + "'s List of countries ";
+    
+    var list = document.createElement("ol")
+    document.querySelector(".content").appendChild(country_list);
+    country_list.setAttribute("class", "countries");
+
   </script>
 </body>
 
