@@ -2,12 +2,31 @@
 <html lang="en">
   <head>
     <title>Forms Lab</title>
+    <style>
+
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <div>
           <h1>HTML 1 Forms Lab</h1>
+          <form action= "https://nameless-thicket-21836.herokuapp.com/la" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+              </li>
+              <li>
+                <label for="msg">Interests:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
+          
+          </form>
         </div>
       </div>
     </div>
