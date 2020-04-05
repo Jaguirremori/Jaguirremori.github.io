@@ -46,6 +46,21 @@
           accessToken: 'pk.eyJ1IjoiamFndWlycmVtb3JpIiwiYSI6ImNrOG5pNDk0eDBhYnIza3J4eGszcnRhdG4ifQ.aORATlEGmGWOfXbjZq9vbg'
         }).addTo(map_area);
 
+
+        var mckeldin = L.marker([38.986235, -76.944613]).addTo(map_area);
+        mckeldin.bindPopup("<b>McKeldin Library</b>");
+
+        let pg_county = [
+        [38.981788,-76.938686],
+        [38.977805,-76.93784],
+        [38.980981,-76.937975]
+      ];
+
+        L.marker([pg_county[0][0], pg_county[0][1]]).addTo(map_area).bindPopup("<b>Marathon Deli</b>");
+
+        L.marker([pg_county[1][0], pg_county[1][1]]).addTo(map_area).bindPopup("<b>Paisano's Pizza</b>");
+
+        L.marker([pg_county[2][0], pg_county[2][1]]).addTo(map_area).bindPopup("<b>Nando's Peri Peri</b>");
     </script>
   </body>
 </html>
