@@ -21,13 +21,18 @@
       <div class="wrapper">
         <div class="header">Frontend Libraries: Maps Lab</div>
         <div class="content">
-          When your lab is done, this should be replaced with a stylish map.
+          Jose Aguirre-Mori Lab 7 Map
         </div>
         <div class="footer">Make some markers work!</div>
       </div>
     </div>
     <script>
         /* Your lab code can go here, or in an external file you include */
+        var map = document.createElement("div");
+        map.id = "map";
+        var content = document.querySelector(".content");
+        content.appendChild(map);
+        map.style = "width: 640px; height: 480px;";
     </script>
   </body>
 </html>
